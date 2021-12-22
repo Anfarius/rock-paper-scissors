@@ -6,8 +6,9 @@ function computerPlay () {
     return computerChoice;
 }
 
-// function which asks the player to choose an option, runs the computerPlay function and compares the choices
-// to determine the winner. It returns an "" string if there was a tie and the name of the winner in a string otherwise.
+// function which asks the player to choose an option, runs the computerPlay
+// function and compares the choices to determine the winner. It returns an ""
+// string if there was a tie and the name of the winner in a string otherwise.
 
 function playRound() {
 
@@ -16,9 +17,11 @@ function playRound() {
     let correctInput = false;
     while (correctInput == false) {
 
-        playerChoice = prompt("Choose rock, paper or scissors by entering the name below: ");
+        playerChoice = prompt(
+                "Choose rock, paper or scissors by entering the name below: ");
 
-        playerChoice === null ? alert("Please enter one of the options.") : correctInput = checkPlayerChoice(playerChoice);
+        playerChoice === null ? alert("Please enter one of the options.") : 
+                correctInput = checkPlayerChoice(playerChoice);
     }
 
     let computerChoice = computerPlay();
@@ -43,12 +46,14 @@ function playRound() {
     return result;
 }
 
-// creating a function checking whether or not the player entered a correctly-written choice.
-// The function retruns either true or false to change the boolean variable in playRound to exit the while loop.
+// creating a function checking whether or not the player entered a
+// correctly-written choice. The function retruns either true or false to change
+// the boolean variable in playRound to exit the while loop.
 
 function checkPlayerChoice(playerChoice) {
     playerChoice = playerChoice.toLowerCase();
-    if (playerChoice === "rock" || playerChoice === "paper" || playerChoice === "scissors") {;
+    if (playerChoice === "rock" || playerChoice === "paper" || playerChoice === 
+            "scissors") {;
         return true;
     } else {
         alert("Please type an option correctly.");
@@ -56,8 +61,9 @@ function checkPlayerChoice(playerChoice) {
     }
 }
 
-// creating the final game function which runs the playRound function a number of times until the players played 5
-// rounds which not ended in a tie. It also displays the final message in the console.
+// creating the final game function which runs the playRound function a number
+// of times until the players played 5 rounds which not ended in a tie. It also
+// displays the final message in the console.
 
 function game() {
     let playerScore = 0;
@@ -71,9 +77,11 @@ function game() {
     }
 
     if (playerScore > computerScore) {
-        console.log(`The game's over. You win! The final score is ${playerScore} for you and ${computerScore} for the computer.`);
+        console.log(`The game's over. You win! The final score is ${playerScore}
+                 for you and ${computerScore} for the computer.`);
     } else {
-        console.log(`The game's over. You lose! The final score is ${playerScore} for you and ${computerScore} for the computer.`);
+        console.log(`The game's over. You lose! The final score is 
+                ${playerScore} for you and ${computerScore} for the computer.`);
     }
 
 }
