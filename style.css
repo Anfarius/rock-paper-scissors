@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
 body {
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
     padding: 0;
     height: 100vh;
+    font-family: 'Playfair Display SC', serif;
+    color: rgb(90, 83, 75);
 }
 
 h1 {
@@ -30,9 +33,17 @@ h4 {
     padding: 1.33em;;
 }
 
-p {
+p.intro, .score {
     width: 40%;
     text-align: justify;
+    background-image: url("img/vintage-concrete.png");
+    border: solid;
+    padding: 20px;
+    box-shadow: 10px 10px 10px 0 black;
+}
+
+p.result, p.scoreResult {
+    text-align: center;
 }
 
 img {
@@ -60,7 +71,6 @@ button:hover {
 }
 
 .header, .footer {
-    color: rgb(90, 83, 75);
     background-image: url("img/vintage-concrete.png");
     display: flex;
     align-items:  center;
@@ -72,7 +82,28 @@ button:hover {
 }
 
 .footer {
+    font-family: erif;
     border-top: solid;
-    font-size: 12px;
+    font-size: 14px;
     padding: 1.33em;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score>h1, .score>h2, .score>p {
+    margin: 0;
+}
+
+.score>.scoreResult {
+    margin: 25px 0 15px 0;
+}
+
+button.reset {
+    height: 50px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;;
 }

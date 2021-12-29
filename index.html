@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
     <div class="header">
         <h1>Swords-Spears-Horses</h1>
-        <h4>(a medieval rock-paper-scissors game)</h6>
+        <h4>a medieval rock-paper-scissors game</h6>
     </div>
     <div class="content">
-        <p>
+        <p class="intro">
             You are a general on a field of a medieval battle.<br><br>
             You will fight with your opponent by choosing a regiment to pit
             against their choice. You can choose between a sword infantry, a
@@ -26,14 +26,16 @@
         </p>
         <h2>Choose your regiment!</h1>
         <div class="buttons">
-            <button><img src="img/sword.png" alt="Sword"></button>
-            <button><img src="img/spear.png" alt="Spear"></button>
-            <button><img src="img/horse-head.png" alt="Horse"></button>
+            <button data-icon="sword"><img src="img/sword.png" alt="Sword"></button>
+            <button data-icon="spear"><img src="img/spear.png" alt="Spear"></button>
+            <button data-icon="horse"><img src="img/horse-head.png" alt="Horse"></button>
         </div>
         <div class="score">
+            <p class="result"></p>
             <h1>Score</h1>
-            <h2>Player: 0</h2>
-            <h2>Computer: 0</h2>
+            <h2 class="playerScore">Player: 0</h2>
+            <h2 class="computerScore">Computer: 0</h2>
+            <p class="scoreResult"></p>
         </div>
     </div>
     <div class="footer">
