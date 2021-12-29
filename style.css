@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.content {
+    flex-grow: 1;
+    background-image: url("img/gravel.png");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.33em;;
+}
+
+p {
+    width: 40%;
+    text-align: justify;
+}
+
+img {
+    width: 75px;
+}
+
+button {
+    border-radius: 15px;
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    box-shadow: 10px 10px 10px 0;
+}
+
+button:hover {
+    background-image: url("img/vintage-concrete.png");
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    margin-bottom: 50px;
+}
+
+.header, .footer {
+    color: rgb(90, 83, 75);
+    background-image: url("img/vintage-concrete.png");
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: solid;
+}
+
+.footer {
+    border-top: solid;
+    font-size: 12px;
+    padding: 1.33em;
+}
